@@ -7,7 +7,8 @@ set (SOURCE
         cart.cpp
         )
 set (INCLUDE
-       ${MY_DIRECTORY}/cart.h
+        ${MY_DIRECTORY}/cart.h
+        ${MY_DIRECTORY}/exceptions.h
         )
 
 add_executable(page_title ${SOURCE} ${INCLUDE})

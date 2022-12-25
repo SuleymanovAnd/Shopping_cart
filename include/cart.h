@@ -3,6 +3,8 @@
 
 class Cart {
     std::map <std::string, int> database;
+    std::map <std::string, int> cart;
+
 public:
 
     Cart();
