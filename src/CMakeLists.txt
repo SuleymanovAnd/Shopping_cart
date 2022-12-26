@@ -11,6 +11,6 @@ set (INCLUDE
         ${MY_DIRECTORY}/exceptions.h
         )
 
-add_executable(page_title ${SOURCE} ${INCLUDE})
+add_executable(shopping_cart ${SOURCE} ${INCLUDE})
 
-target_include_directories( page_title PUBLIC ${MY_DIRECTORY})
+target_include_directories(shopping_cart PUBLIC ${MY_DIRECTORY})
