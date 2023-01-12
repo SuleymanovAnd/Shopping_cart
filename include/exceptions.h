@@ -2,15 +2,17 @@
 #include <exception>
 #include <utility>
 
-class StoreException{
-    std::string message;
+class StoreException : public std::exception
+        {
+    char* message;
 public:
     StoreException(){
         message = "some store error";
     }
-    StoreException(std::string in_message): message(std::move(in_message)){};
+    StoreException(char* in_message): message(std::move(in_message)){};
 
-    std::string what ()const noexcept{
+    const char* what ()const noexcept override
+    {
         return message;
     }
 };
